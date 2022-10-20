@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #edf3f8;
+    background: -moz-radial-gradient(center, ellipse cover, #edf3f8 1%, #dee3e8 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #edf3f8 1%, #dee3e8 100%);
+    background: radial-gradient(ellipse at center, #edf3f8 1%, #dee3e8 100%);
+ }
+
+.title {
+    z-index: 10;
+    position: absolute;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    position: relative;
+    color: #000000;
+    font-weight: 300;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.title h3 {
+    font-weight: 200;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    color: #5e7283;
+    letter-spacing: 2px;
+}
+
+.title p {
+    font-weight: 200;
+    font-size: 16px;
+    color: #5e7283;
+}
+
+.pentahedron {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #3E82F7;
+}
+
+.point {
+    fill: #8491A3;
+}
+
+.rhombus {
+    fill: #2DA94F;
+    stroke: #2DA94F;
+}
+
+.x {
+    fill: #FDBD00;
+}
+
+.circle {
+    fill: #ED412D;
+}
+
+svg {
+   height: 30vw;
+   width: 30vw;
+}
+
+.animation-1 {
+    animation: animation-1 9s ease-in-out infinite alternate both;
+    -webkit-animation: animation-1 9s ease-in-out infinite alternate both;
+}
+
+
+.animation-2 {
+    animation: animation-2 9s ease-in-out infinite alternate both;
+    -webkit-animation: animation-2 9s ease-in-out infinite alternate both;
+}
+
+
+.animation-3 {
+    animation: animation-3 9s ease-in-out infinite alternate both;
+    -webkit-animation: animation-3 9s ease-in-out infinite alternate both;
+}
+
+
+.animation-4 {
+    animation: animation-4 9s ease-in-out infinite alternate both;
+    -webkit-animation: animation-4 9s ease-in-out infinite alternate both;
+}
+
+
+.animation-5 {
+    animation: animation-5 9s ease-in-out infinite alternate both;
+    -webkit-animation: animation-5 9s ease-in-out infinite alternate both;
+}
+
+.svg-holder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes animation-1 {
+  0%{
+    margin-top: 90vh;
+    margin-left: 100px;
+    position: absolute;
+    transform: rotate(250deg);
+    -webkit-transform: rotate(250deg);
+    -moz-transform: rotate(250deg);
+    -ms-transform: rotate(250deg);
+    -o-transform: rotate(250deg);
+}
+
+  40%{
+    margin-top: 10vh;
+    margin-left: 50px;
+    position: absolute;
+  }
+
+  60%{
+    margin-top: 60vh;
+    margin-left: -70px;
+    position: absolute;
+  }
+
+  100%{
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 100px;
+  }
+}
+
+
+@keyframes animation-2 {
+    0%{
+      margin-top: 50vh;
+      margin-left: 10px;
+      position: absolute;
+      transform: rotate(250deg);
+      -webkit-transform: rotate(250deg);
+      -moz-transform: rotate(250deg);
+      -ms-transform: rotate(250deg);
+      -o-transform: rotate(250deg);
+  }
+  
+    40%{
+      margin-top: 70vh;
+      margin-left: 30px;
+      position: absolute;
+    
+    }
+  
+    60%{
+      margin-top: 60vh;
+      margin-left: 70px;
+      position: absolute;
+    }
+  
+    100%{
+      margin-top: 0px;
+      position: absolute;
+      margin-left: -10px;
+      transform: rotate(30);
+      -webkit-transform: rotate(30);
+      -moz-transform: rotate(30);
+      -ms-transform: rotate(30);
+      -o-transform: rotate(30);
+}
+  }
+
+  
+@keyframes animation-3 {
+    0%{
+      margin-top: 50vh;
+      margin-left: 200px;
+      position: absolute;
+      transform: rotate(250deg);
+      -webkit-transform: rotate(250deg);
+      -moz-transform: rotate(250deg);
+      -ms-transform: rotate(250deg);
+      -o-transform: rotate(250deg);
+  }
+  
+    40%{
+      margin-top: 30vh;
+      margin-left: 100px;
+      position: absolute;
+    
+    }
+  
+    60%{
+      margin-top: 40vh;
+      margin-left: 150px;
+      position: absolute;
+    }
+  
+    100%{
+      margin-top: 0px;
+      position: absolute;
+      margin-left: 180px;
+      transform: rotate(30);
+      -webkit-transform: rotate(30);
+      -moz-transform: rotate(30);
+      -ms-transform: rotate(30);
+      -o-transform: rotate(30);
+}
+  }
+
+
+  @keyframes animation-4 {
+    0%{
+      margin-top: 100vh;
+      margin-left: 100px;
+      position: absolute;
+      transform: rotate(250deg);
+      -webkit-transform: rotate(250deg);
+      -moz-transform: rotate(250deg);
+      -ms-transform: rotate(250deg);
+      -o-transform: rotate(250deg);
+  }
+  
+    40%{
+      margin-top: 10vh;
+      margin-left: 90px;
+      position: absolute;
+    }
+  
+    60%{
+      margin-top: 60vh;
+      margin-left: 230px;
+      position: absolute;
+    }
+  
+    100%{
+      margin-top: 10vh;
+      position: absolute;
+      margin-left: 10px;
+    }
+  }
