@@ -1,111 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>A-bot</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-bot</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
-<body>
-    <div class="page-container">
-        <div class="top">
-           <a href="index.html">
-            <span class="back-icon">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-            </span>
-           </a>
-        </div>
-      
-     <div class="section">
-        <p class="title-sec">CGPA</p>
-        <div class="input-feild">
-            <div class="inputdiv active">
-               <p>First Class</p>
-               <input type="radio" name="" id="">
-            </div>
-            <div class="inputdiv">
-                <p>Second Class Upper</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>Second Class Lower</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>Third Class</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>Certificate</p>
-                <input type="radio" name="" id="">
-             </div>
-        </div>
-     </div>
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/abot.gif" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>STEP 1</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Name" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
 
-     <div class="section">
-        <p class="title-sec">Attendace</p>
-        <div class="input-feild">
-            <div class="inputdiv">
-                <p>10% - 30%</p>
-                <input type="radio" name="" id="">
-             </div>
-            <div class="inputdiv">
-                <p>31% - 40%</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>41% - 50%</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>51% - 70%</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>71% - 100%</p>
-                <input type="radio" name="" id="">
-             </div>
-        </div>
-     </div>
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/abot.gif" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>STEP 2</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="CGPA" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+					</div>
+                </section>
 
-     <div class="section">
-        <p class="title-sec">Number of pass Taken</p>
-        <div class="input-feild">
-            <div class="inputdiv">
-                <p>none</p>
-                <input type="radio" name="" id="">
-             </div>
-            <div class="inputdiv">
-                <p>1 - 2</p>
-                <input type="radio" name="" id="">
-             </div>
-             <div class="inputdiv">
-                <p>3 - 6</p>
-                <input type="radio" name="" id="">
-             </div>
-           
-             <div class="inputdiv">
-                <p>7 - above</p>
-                <input type="radio" name="" id="">
-             </div>
-        </div>
-     </div>
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/abot.gif" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>STEP 3</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Attendance" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
 
-<div class="button-holder">
-    <button>Request</button>
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
 
-   <span class="bobing-icon"><ion-icon name="arrow-forward-outline"></ion-icon></span>
-</div>
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
 </body>
-
 </html>
